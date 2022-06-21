@@ -1,0 +1,567 @@
+body {
+    background-color: gray;
+}
+
+/*HEADER*/
+
+header {
+    background-color: black;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    margin: 25px;
+}
+
+.menu-item-pag {
+    text-decoration: none;
+    color: darkorange;
+    border: 2px solid black;
+    padding: 0.5rem 1rem;
+    transition: border 1s;
+}
+
+.menu-item-pag:hover {
+    border-color: darkorange;
+}
+
+.imagenlogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 230px;
+    height: 200px;
+}
+
+/*FOOTER*/
+
+.iconubi {
+    content: url('https://api.iconify.design/ps/facebook-places.svg?color=darkorange');
+    width: 20px;
+}
+
+.iconwsp {
+    content: url('https://api.iconify.design/akar-icons/whatsapp-fill.svg?color=darkorange');
+    width: 25px;
+}
+
+.iconfb {
+    content: url('https://api.iconify.design/akar-icons/facebook-fill.svg?color=darkorange');
+    width: 25px;
+}
+
+.iconig {
+    content: url('https://api.iconify.design/akar-icons/instagram-fill.svg?color=darkorange');
+    width: 25px;
+}
+
+.footer {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        color: #ff8c00;
+        text-align: center;
+        justify-content: center;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-right: 25px;
+    justify-content: center;
+}
+
+/*HOME*/
+
+.prom {
+    background-color: rgb(248, 139, 14);
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font: bold;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px gray;
+    animation-name: logoAnimation;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
+  }
+  
+  @keyframes logoAnimation {
+    
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    20%,80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);}
+    }
+
+.promo-cond {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+.barraprincipal {
+    height: 800px;
+    background-image: url(./../Img/Inicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    color: white;
+    text-align: right;
+    font-size: 80px;
+    font-style: inherit;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.clases {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.clase-cross {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-style: italic;
+    width: 50%;
+}
+
+.clase-fun {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-style: italic;
+    width: 50%;
+}
+
+.imgcentrada {
+    background-color: black;
+    width: auto
+}
+
+.imgcentrada2 {
+    background-color: black;
+    width: auto
+}
+
+
+@media (max-width: 900px) {
+
+
+/*HEADER MEDIA*/
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start: 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    margin: 8px;
+}
+
+.menu-item-pag {
+    text-decoration: none;
+    color: darkorange;
+}
+
+.imagenlogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 130px;
+    height: 100px;
+}
+
+/*FOOTER MEDIA*/
+
+.iconubi {
+    content: url('https://api.iconify.design/ps/facebook-places.svg?color=darkorange');
+    width: 10px;
+    justify-items: center;
+}
+
+.iconwsp {
+    content: url('https://api.iconify.design/akar-icons/whatsapp-fill.svg?color=darkorange');
+    width: 12px;
+}
+
+.iconfb {
+    content: url('https://api.iconify.design/akar-icons/facebook-fill.svg?color=darkorange');
+    width: 12px;
+}
+
+.iconig {
+    content: url('https://api.iconify.design/akar-icons/instagram-fill.svg?color=darkorange');
+    width: 12px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: #ff8c00;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    justify-content: center;
+}
+
+/*HOME MEDIA*/
+
+
+.barraprincipal {
+    height: 300px;
+    background-image: url(./../Img/Inicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    color: white;
+    text-align: right;
+    font-size: 40px;
+    font-style: inherit;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.clases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.clase-cross {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-style: italic;
+    width: 100%;
+}
+
+.clase-fun {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-style: italic;
+    width: 100%;
+}
+
+.imgcentrada {
+    background-color: black;
+    width: 100%
+}
+
+.imgcentrada2 {
+    background-color: black;
+    width: 100%
+}
+
+}
+
+/*CLASES*/
+
+.tiposclases {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.claseuno {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: black;
+    color: darkorange;
+    text-align: center;
+    margin: 3%;
+    transition: transform 1s;
+}
+
+.claseuno:hover {
+    transform: scale(1.04);
+}
+
+.imgcross {
+    width: 100%;
+}
+
+.imgfun {
+    width: 100%;
+}
+
+.imgoly {
+    width: 100%;
+}
+
+.imggap {
+    width: 100%;
+}
+
+.imgaero {
+    width: 100%;
+}
+
+.clasedos { 
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: black;
+    color: darkorange;
+    text-align: center;
+    margin: 3%;
+    transition: transform 1s;
+}
+
+.clasedos:hover {
+    transform: scale(1.04);
+}
+
+.clasetres {
+    grid-column: 1/2;
+    grid-row: 2/2;
+    background-color: black;
+    color: darkorange;
+    text-align: center;
+    margin: 3%;
+    transition: transform 1s;
+}
+
+.clasetres:hover {
+    transform: scale(1.04);
+}
+
+.clasecuatro {
+    grid-column: 2/3;
+    grid-row: 2/2;
+    background-color: black;
+    color: darkorange;
+    text-align: center;
+    margin: 3%;
+    transition: transform 1s;
+}
+
+.clasecuatro:hover {
+    transform: scale(1.04);
+}
+
+.clasecinco {
+    grid-column: 1/2;
+    grid-row: 3/3;
+    background-color: black;
+    color: darkorange;
+    text-align: center;
+    margin: 3%;
+    transition: transform 1s;
+}
+
+.clasecinco:hover {
+    transform: scale(1.04);
+}
+
+@media (max-width: 900px) {
+
+
+/*CLASES*/
+
+.tiposclases {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.claseuno {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+.imgcross {
+    width: 100%;
+}
+
+.imgfun {
+    width: 100%;
+}
+
+.imgoly {
+    width: 100%;
+}
+
+.imggap {
+    width: 100%;
+}
+
+.imgaero {
+    width: 100%;
+}
+
+.clasedos { 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+.clasetres {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+.clasecuatro {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+.clasecinco {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+}
+
+}
+
+/*HORARIOS*/
+
+.tithorarios {
+    font-size: 80px;
+    font-style: oblique;
+    text-align: center;
+    background-image: url(../Img/Horarios1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    height: 300px;
+    color: beige;
+}
+
+
+table {
+    width: 800px;
+    border: 1px solid #000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ th, td {
+    width: 400px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em;
+ }
+
+/*PASES*/
+
+.abonos {
+    background-image: url(../Img/pases1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    height: 800px;
+    width: 100%;
+    padding: auto;
+}
+
+.abonotitulo {
+    font-size: 90px;
+    color: beige;
+    font-style: oblique;
+    text-align: center;
+}
+
+.abonoslista {
+    font-size: 30px;
+    color: beige;
+    font-style: oblique;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    list-style-type: none;
+
+}
+
+.abonoaclaracion {
+    font-size: 20px;
+    color: beige;
+    font-style: oblique;
+    text-align: center; 
+}

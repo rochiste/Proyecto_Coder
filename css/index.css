@@ -34,6 +34,11 @@ header {
     color: darkorange;
     border: 2px solid black;
     padding: 0.5rem 1rem;
+    transition: border 1s;
+}
+
+.menu-item-pag:hover {
+    border-color: darkorange;
 }
 
 .imagenlogo {
@@ -99,9 +104,30 @@ header {
     margin-top: 15px;
     font-size: 30px;
     text-shadow: 2px 2px 5px gray;
-    
+    animation-name: logoAnimation;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
   }
-
+  
+  @keyframes logoAnimation {
+    
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    20%,80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);}
+    }
 
 .promo-cond {
     margin: 0;

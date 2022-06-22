@@ -111,7 +111,7 @@ header {
 
 .barraprincipal {
     height: 800px;
-    background-image: url(./../Img/Inicio.jpg);
+    background-image: url(./../img/Inicio.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -246,7 +246,7 @@ header {
 
 .barraprincipal {
     height: 300px;
-    background-image: url(./../Img/Inicio.jpg);
+    background-image: url(./../img/Inicio.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -476,7 +476,7 @@ header {
     font-size: 80px;
     font-style: oblique;
     text-align: center;
-    background-image: url(../Img/Horarios1.jpg);
+    background-image: url(../img/Horarios1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -505,7 +505,7 @@ table {
 /*PASES*/
 
 .abonos {
-    background-image: url(../Img/pases1.jpg);
+    background-image: url(../img/pases1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
